@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>国合华信官网</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="dist/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+</head>
+<!-- 界面的css样式 -->
+<style type="text/css">
+	div,a,ul,li,img,span{
+		padding: 0;
+		margin: 0;
+		
+	}
+	ul,li{
+		list-style:none;
+	}
+	.nav{
+		background-color:#FFFFFF;
+		color:black;
+		font-size: 16px; 
+	}
+	.navbar-right li a{
+		font-weight: 900;
+	}
+	.navbar-default{
+		border-bottom: 2px solid  #D0D0D0;
+	}
+	.banner{ width: 100%; height: auto;margin-bottom: 0; background: url(dist/bb2.png) no-repeat center top / cover; color: #fff; }
+	.jumbotron .container{ padding-top:20%; }
+	.more{
+		width: 210px;height: 50px;text-align: center;line-height: 50px;border: 1px solid white;border-radius: 5px;display: block;color: white;
+	}
+	.more:hover{
+		background: blue;
+		color: white;
+		text-decoration: none
+	}
+	.nav-box{ width: 100%; height: 320px; background: #fff; position: fixed; top:50px; left: 0; z-index: 9999; display:none; box-shadow: 0px 2px 2px #ccc; -webkit-box-shadow: 0px 2px 2px #ccc; -moz-box-shadow: 0px 2px 2px #ccc; }
+	.box{ display: none; width: 100%; margin: 0 auto; }
+	.box .soft{ text-align: center; }
+	.box .soft img{ margin:0 auto; }
+	.box .soft h3{ font-size: 16px; line-height: 60px; }
+	.box .row .comm{ line-height: 100px; padding-left: 15px; }
+	.box .row .comm span{ display: inline-block; margin-right: 5%; font-size: 28px; color: #333!important; cursor: pointer; }
+	.box .row .comm span b{ color: #009ddc; font-weight: normal; }
+	.box .row .comm span.active{ color: #009ddc!important; }
+	.box .row .data-tabs{ position: relative; margin-bottom: 20px; }
+	.box .row .data-tabs p{ position: absolute; top: 40px; left: 15px; font-size: 18px; }
+	.box .row h3,.box .row .about-content .row h3{ margin-top: 0; }
+	.box .row .about-content .row h3 b{ color: #009ddc; font-weight: normal; }
+	.box .row .about-content .row p{ padding-right: 20%; }
+	.box .about-content .row{ overflow: hidden; display: none; }
+	.box .row .more{ display: block; width: 160px; height: 40px; font-size: 16px; text-align: center; line-height: 40px; color: #fff; background: #0099ff; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; }
+	.box .row .more:hover{ text-decoration: underline; }
+	.box .row .anli-more{ margin-top: 90px; }
+	.box .row .data-more{ margin-top: 90px; }
+	.box .row .inteli-more{ margin-top: 90px; }
+	.box .row .about-right{ padding-top: 30px;  }
+	.box .row .about-right strong{ line-height: 60px; font-size: 22px; }
+	.box .row .about-right p{ padding-right: 60px; font-size: 14px;}
+	.box .row .about-right .p3{ margin-top: 70px; padding-left: 60%; }
+</style>
+<body style="padding-top:50px">
+	<nav class="nav navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand" style="padding-top:8px">
+         <img src="http://101.201.69.67/wp-content/themes/alphaai/images/logo.png" alt="国合华信官网">
+        </a>
+        <!-- class="navbar-toggle"将按钮和导航栏绑定,开始时,按钮是隐藏的,当到达一定屏幕时,才出现按钮-->
+       <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+       </button>
+      </div> 
+      <!-- collapse会使列表内容开始时隐藏 ,navbar-collapse可以让一开始显示 -->
+      <div id="navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+	        <li><a href="">企业应用软件</a></li>
+			<li><a href="">企业互联网服务案例</a></li>
+			<li><a href="">大数据与分析</a></li>
+			<li><a href="">人工智能&amp;机器学习</a></li>
+			<li><a href="">关于我们</a></li>
+        </ul>
+      </div>    
+    </div>
+   </nav>
+	<div class="nav-box hidden-xs">
+  	 	<div class="box" style="padding-top:50px; display: block;">
+  	 		<div class="row">
+		  	 	<div class="col-lg-3 col-md-3 col-sm-3 soft">
+		  	 		<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/1-1.png" class="img-responsive" alt="">
+		  	 		<h3>deep CMS - 专业的企业信息管理</h3>
+		  	 	</div>
+		  	 	<div class="col-lg-3 col-md-3 col-sm-3 soft">
+		  	 		<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/1-2.png" class="img-responsive" alt="">
+		  	 		<h3>deep CRM - 专业的客户关系管理</h3>
+		  	 	</div>
+		  	 	<div class="col-lg-3 col-md-3 col-sm-3 soft">
+		  	 		<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/1-3.png" class="img-responsive" alt="">
+		  	 		<h3>deep ERP - 专业的企业资源计划</h3>
+		  	 	</div>
+		  	 	<div class="col-lg-3 col-md-3 col-sm-3 soft">
+		  	 		<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/1-4.png" class="img-responsive" alt="">
+		  	 		<h3>deep OA - 专业的办公自动化管理</h3>
+		  	 	</div>
+	  	 	</div>
+  	 	</div>
+  	 	<div class="box">
+  	 		<div class="row">
+	  	 		<div class="col-lg-12 col-md-12 col-sm-12">
+	  	 			<div class="comm comm-tabs anli-tabs">
+		  	 			<span class="active">电子商务平台</span>
+		  	 			<span>流媒体服务</span>
+		  	 			<span><b>IM</b> —— 即时通讯</span>
+	  	 			</div>
+	  	 		</div>
+	  	 	</div>
+	  	 	<div class="row">
+	  	 		<div class="col-lg-8 col-md-8 col-sm-8">
+					<div class="container-fluid about-content">
+						<div class="row" style="display: block;">
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/2-1.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<h3>电子商务平台</h3>
+								<p>以跨平台、多功能、优化的服务器架构为特色，国合华信擅长B2C、O2O、B2B2C、跨境电商、与客户一起沟通，从使用者的角度发现问题，找到最佳解决方案。我们多年的项目经验，找到最有效的解决方法，提供最佳的设计方案</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/2-2.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<h3>流媒体服务</h3>
+								<p>提供企业级云视频播出方案，提供云转码、云存储、云加速、云安全、云管理等视频播出功能，为企业提供一站式视频流媒体技术解决方案</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/2-3.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<h3><b>IM</b> —— 即时通讯</h3>
+								<p>点播、直播、互动直播、云通信一切功能应有尽有，适合所有APP接入的IM SDK，可用于各行各业打造私信、群聊、社交聊天等功能稳定可靠、数据安全、快速部署</p>
+							</div>
+						</div>
+					</div>
+	  	 		</div>
+	  	 		<div class="col-lg-4 col-md-4 col-sm-4">
+	  	 			<a href="/index.php/case" class="more anli-more">了解更多</a>
+	  	 		</div>
+	  	 	</div>
+  	 	</div>
+  	 	<div class="box">
+  	 		<div class="row">
+  	 			<div class="col-lg-12 col-md-12 col-sm-12">
+  	 				<div class="comm data-tabs">
+  	 					<span>数据挖掘</span>
+  	 					<p>挖掘企业大数据，成就更佳商业智能</p>
+  	 				</div>
+  	 			</div>
+  	 		</div>
+  	 		<div class="row">
+  	 			<div class="col-lg-8 col-md-8 col-sm-8">
+  	 				<div class="container-fluid about-content">
+  	 					<div class="row" style="display: block;">
+  	 						<div class="col-lg-4 col-md-4 col-sm-4">
+  	 							<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/3-1.png" class="img-responsive" alt="">
+  	 						</div>
+  	 						<div class="col-lg-8 col-md-8 col-sm-8">
+  	 							<h3></h3>
+								<p style="line-height: 30px;">国合华信正在部署系统和开发技能，用于深入分析大数据，以提高公司商业智能（BI）。这一数据中的一大部分为非结构化的大数据集，在企业数据中所占的比例最高可达 90%；</p>
+  	 						</div>
+  	 					</div>
+  	 				</div>
+  	 			</div>
+  	 			<div class="col-lg-4 col-md-4 col-sm-4">
+	  	 			<a href="/index.php/data" class="more data-more">了解更多</a>
+	  	 		</div>
+  	 		</div>
+  	 	</div>
+  	 	<div class="box">
+  	 		<div class="row">
+  	 			<div class="col-lg-12 col-md-12 col-sm-12">
+  	 				<div class="comm comm-tabs inteli-tabs">
+		  	 			<span class="active">信息检索</span>
+		  	 			<span>移动计算</span>
+		  	 			<span>多媒体信息智能处理</span>
+	  	 			</div>
+  	 			</div>
+  	 		</div>
+  	 		<div class="row">
+  	 			<div class="col-lg-8 col-md-8 col-sm-8">
+  	 				<div class="container-fluid about-content">
+						<div class="row" style="display: block;">
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/4-1.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<h3>信息检索</h3>
+								<p>网络信息抓取，基于内容、语义的检索以及检索系统的构建</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/4-2.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<h3>移动计算</h3>
+								<p>这其中最关键的就应该是客户的划分和跟踪处理了。那对于客户的如何划分也就决定了怎么样跟踪处理客户信息了。</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-4">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/4-3.png" class="img-responsive" alt="">
+							</div>
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<h3>多媒体信息智能处理</h3>
+								<p>文字、图像、视频、音频、3D信息的自动识别与分析以及跨媒体信息的融合。</p>
+							</div>
+						</div>
+					</div>
+  	 			</div>
+  	 			<div class="col-lg-4 col-md-4 col-sm-4">
+	  	 			<a href="/index.php/intelligence" class="more inteli-more">了解更多</a>
+	  	 		</div>
+  	 		</div>
+  	 	</div>
+  	 	<div class="box">
+  	 		<div class="row">
+  	 			<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="comm about-tabs">
+						<span>公司介绍</span>
+						<span>企业文化</span>
+						<span>成员介绍</span>
+						<span>人才招聘</span>
+					</div>
+					<div class="container-fluid">
+						<div class="row" style="display: block;">
+							<div class="col-lg-5 col-md-5 col-sm-5">
+								<img src="http://101.201.69.67/wp-content/themes/alphaai/images/nav/5-1.png" class="img-responsive" alt="" />
+							</div>
+						</div>
+					</div>
+  	 			</div>
+  	 			<div class="col-lg-5 col-md-5 col-sm-5 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 about-right">
+					<strong>WE ARE HIRING!</strong>
+					<p>我们欢迎你参加我们的活动、报道我们的产品，更期待热爱这份事业的你加入我们。</p>
+					<p>无论你是Coder、Tester，还是PM，只要你够Geek，这里都能找到你的天地。</p>
+					<p class="p3"><a href="/index.php/about" class="more">了解更多</a></p>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+	</div>
+
+  	<div class="jumbotron banner">
+		<div class="container">
+		   <h2>OUR MISSION</h2>
+		   <p>以简单可靠的信息化解决方案，帮助提高企业运行效率，降低企业运行成本！</p>
+		   <p><a class="more" href="#">了解更多</a></p>
+		</div>
+	</div>
+
+   <div style="text-align: center;background-color:#EEEEEE;padding:50px ">
+   	<p>FIGHTING</p>
+   	<p>NEVER GIVE UP--朱田田</p>
+   </div>
+</body>
+<!-- js实现移入移除事件 -->
+<script type="text/javascript">
+		//定义全局变量timer,实现导航栏连缀效果
+		var timer=null;
+		$("#navbar-collapse .nav").hover(function(){
+			clearTimeout(timer);
+			$(".nav-box").show();
+		},function(){
+			timer=setTimeout(function(){
+				$(".nav-box").hide();
+			},100);	
+		});
+		$(".nav-box").hover(function(){
+			clearTimeout(timer);
+		},function(){
+			timer=setTimeout(function(){
+				$(".nav-box").hide();
+			},100);	
+		});
+		$("#navbar-collapse .nav li").hover(function(){
+			var i=$(this).index();
+			$(".nav-box .box").eq(i).stop(true,true).show(400).siblings().stop(true,true).hide(400);
+		});
+		$(".comm-tabs span").hover(function(){
+			var $index=$(this).index();
+			$(this).addClass("active").siblings().removeClass("active");
+			$(this).closest(".box").find(".about-content .row").eq($index).show().siblings().hide();
+		});
+		$(".system .system-box").hover(function(){
+			$(this).find(".slide").stop(true).fadeOut(500);
+		},function(){
+			$(this).find(".slide").stop(true).fadeIn(500);
+		});
+</script>
+</html>
